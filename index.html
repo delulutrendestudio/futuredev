@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="es">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DELULU FUTURE DEV | ARCADE MODE</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+        body {
+            box-sizing: border-box;
+        }
+        
+        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+        
+        * {
+            font-family: 'JetBrains Mono', 'Courier New', monospace !important;
+        }
+        
+        body {
+            font-size: 16px;
+            background: #000000;
+            color: #00ff00;
+        }
+        
+        .arcade-border {
+            border: 2px solid currentColor;
+        }
+        
+        .arcade-button:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        
+        .pixel-grid {
+            background-image: 
+                linear-gradient(rgba(0, 255, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 255, 255, 0.03) 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+    </style>
+  <style>@view-transition { navigation: auto; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+  <script src="/_sdk/element_sdk.js" type="text/javascript"></script>
+ </head>
+ <body class="bg-black text-green-400 min-h-full pixel-grid"><!-- Arcade Header -->
+  <div class="border-b-4 arcade-border p-4" style="border-color: #00ffff;">
+   <div class="flex items-center justify-between flex-wrap gap-2">
+    <div class="flex items-center space-x-4">
+     <div class="font-bold text-sm md:text-base" style="color: #00ffff;">
+      ARCADE MODE
+     </div>
+    </div>
+    <div class="text-xs md:text-sm" style="color: #ff0080;">
+     PLAYER 1 | HIGH SCORE: INFINITE
+    </div>
+   </div>
+  </div><!-- Main Terminal -->
+  <div class="container mx-auto px-4 py-6 max-w-6xl"><!-- TypeScript Interface -->
+   <div class="mb-8 text-left">
+    <div class="text-2xl sm:text-3xl md:text-5xl font-bold mb-4" style="color: #ff00ff;">
+     interface DelulufutureDev {
+    </div>
+    <div class="text-lg sm:text-xl md:text-2xl mb-6 ml-4" style="color: #ffff00;">
+     readonly name: "DELULU FUTURE DEV"; mode: "creative" | "technical" | "revolutionary"; status: "building_future";
+    </div>
+    <div class="mb-6 text-sm md:text-base space-y-1 ml-4" style="color: #ff0080;">
+     <div>
+      // Initializing creative protocols...
+     </div>
+     <div style="color: #00ffff;">
+      // TypeScript compilation: SUCCESS
+     </div>
+     <div style="color: #00ff00;">
+      // Ready to execute future.build()
+     </div>
+    </div>
+    <div class="text-2xl sm:text-3xl md:text-5xl font-bold" style="color: #ff00ff;">
+     }
+    </div>
+   </div><!-- TypeScript Methods -->
+   <div class="mb-8 p-4 arcade-border" style="border-color: #00ffff;">
+    <div class="mb-4 font-bold text-left" style="color: #00ffff;">
+     type Methods = {
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 ml-4"><button class="arcade-button text-left p-3 arcade-border transition-all" style="border-color: #ff0080; color: #ff0080;">
+      <div class="font-bold text-sm md:text-base">
+       aboutUs(): Promise&lt;Story&gt;
+      </div>
+      <div class="text-xs md:text-sm opacity-75">
+       // Returns our origin story
+      </div></button> <button class="arcade-button text-left p-3 arcade-border transition-all" style="border-color: #ffff00; color: #ffff00;">
+      <div class="font-bold text-sm md:text-base">
+       getVision(): Future&lt;T&gt;
+      </div>
+      <div class="text-xs md:text-sm opacity-75">
+       // Generic future builder
+      </div></button> <button class="arcade-button text-left p-3 arcade-border transition-all sm:col-span-2 lg:col-span-1" style="border-color: #00ff00; color: #00ff00;">
+      <div class="font-bold text-sm md:text-base">
+       services: Service[]
+      </div>
+      <div class="text-xs md:text-sm opacity-75">
+       // Array of capabilities
+      </div></button>
+    </div>
+    <div class="font-bold text-left mt-4" style="color: #00ffff;">
+     }
+    </div>
+   </div><!-- Game Levels -->
+   <div class="space-y-6"><!-- Implementation: aboutUs() -->
+    <div class="p-4 arcade-border" style="border-color: #ff0080;">
+     <div class="text-lg md:text-xl font-bold mb-3" style="color: #ff0080;"><span style="color: #ffff00;">async</span> aboutUs(): Promise&lt;Story&gt; {
+     </div>
+     <div class="space-y-3 text-sm md:text-base ml-4" style="color: #ff0080;">
+      <p><span style="color: #00ffff;">// Company definition</span></p>
+      <p>const story: Story = {</p>
+      <p class="ml-4">identity: "Delulu Future Dev - estudio creativo-tech",</p>
+      <p class="ml-4">origin: "nacido del caos, cultura pop y necesidad real",</p>
+      <p class="ml-4">approach: "arte + algoritmo + intuición + data + meme + método",</p>
+      <p style="color: #ffff00;" class="ml-4">type: "laboratorio de posibilidades" as const,</p>
+      <p class="ml-4">team: ["diseñadores", "developers", "estrategas", "gamers", "storytellers"],</p>
+      <p><span style="color: #00ff00;">};</span></p>
+      <p><span style="color: #00ff00;">return</span> story; <span style="color: #00ffff;">// Futuro = diseño colaborativo</span></p>
+     </div>
+     <div class="text-lg md:text-xl font-bold" style="color: #ff0080;">
+      }
+     </div>
+    </div><!-- Generic Future Builder -->
+    <div class="p-4 arcade-border" style="border-color: #00ffff;">
+     <div class="text-lg md:text-xl font-bold mb-3" style="color: #00ffff;">
+      getVision&lt;T extends Future&gt;(): Promise&lt;T&gt; {
+     </div>
+     <div class="space-y-3 text-sm md:text-base ml-4" style="color: #00ffff;">
+      <p><span style="color: #ff0080;">// Mission parameters</span></p>
+      <p>const vision = await this.buildFuture({</p>
+      <p class="ml-4">community: "global creative network",</p>
+      <p class="ml-4">fusion: ["imaginación", "tecnología", "empatía"],</p>
+      <p class="ml-4">output: "futuro bello + accesible + humano",</p>
+      <p style="color: #ff0080;" class="ml-4">transformation: "delulu → solu",</p>
+      <p class="ml-4">paradigm: "soñar === revolucionar",</p>
+      <p>});</p>
+      <div class="bg-gray-900 p-3 arcade-border mt-3" style="border-color: #00ff00;">
+       <p class="text-xs md:text-sm" style="color: #00ff00;"><span style="color: #ffff00;">return</span> vision.build("propósito", "código", "glitter");</p>
+      </div>
+     </div>
+     <div class="text-lg md:text-xl font-bold" style="color: #00ffff;">
+      }
+     </div>
+    </div><!-- Core Values Enum -->
+    <div class="p-4 arcade-border" style="border-color: #00ff00;">
+     <div class="text-lg md:text-xl font-bold mb-3" style="color: #00ff00;"><span style="color: #ffff00;">enum</span> CoreValues {
+     </div>
+     <div class="space-y-3 ml-4" style="color: #00ff00;">
+      <p><span style="color: #ff0080;">// Enum members with implementations</span></p>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-3">
+       <div class="arcade-border p-3" style="border-color: #ff0080;">
+        <div class="font-bold text-sm md:text-base" style="color: #ff0080;">
+         INCLUSIVIDAD_RADICAL = "radical_inclusion",
+        </div>
+        <div class="text-xs md:text-sm mt-1">
+         // Todxs caben. Diversidad = internet interesante
+        </div>
+       </div>
+       <div class="arcade-border p-3" style="border-color: #00ffff;">
+        <div class="font-bold text-sm md:text-base" style="color: #00ffff;">
+         CREATIVIDAD_SIN_FRONTERAS = "boundless_creativity",
+        </div>
+        <div class="text-xs md:text-sm mt-1">
+         // No cajas, solo conexiones. Multidisciplinario || null
+        </div>
+       </div>
+       <div class="arcade-border p-3" style="border-color: #ffff00;">
+        <div class="font-bold text-sm md:text-base" style="color: #ffff00;">
+         TECNOLOGIA_CON_ALMA = "soulful_tech",
+        </div>
+        <div class="text-xs md:text-sm mt-1">
+         // Code.hasEmotion = true; Tech !== cold
+        </div>
+       </div>
+       <div class="arcade-border p-3" style="border-color: #ff0080;">
+        <div class="font-bold text-sm md:text-base" style="color: #ff0080;">
+         COLABORACION_Y_COMUNIDAD = "community_first"
+        </div>
+        <div class="text-xs md:text-sm mt-1">
+         // !ego.innovates(); communities.do(); knowledge.share()
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="text-lg md:text-xl font-bold" style="color: #00ff00;">
+      }
+     </div>
+    </div><!-- Services Array Implementation -->
+    <div class="p-4 arcade-border" style="border-color: #ffff00;">
+     <div class="text-lg md:text-xl font-bold mb-3" style="color: #ffff00;">
+      readonly services: Service[] = [
+     </div>
+     <div class="space-y-2 ml-4" style="color: #ffff00;">
+      <p><span style="color: #ff0080;">// Typed service implementations</span></p>
+      <div class="space-y-1 text-xs md:text-sm">
+       <div class="flex items-center">
+        <span class="mr-2" style="color: #00ffff;">{</span> name: "Apps &amp; Sites", description: "UX con alma + UI con glitter" <span style="color: #00ffff;">},</span>
+       </div>
+       <div class="flex items-center">
+        <span class="mr-2" style="color: #ff0080;">{</span> name: "Trend Analysis", description: "Coolhunting + data = ventaja" <span style="color: #ff0080;">},</span>
+       </div>
+       <div class="flex items-center">
+        <span class="mr-2" style="color: #00ff00;">{</span> name: "Brand Identity", description: "Main character identity" <span style="color: #00ff00;">},</span>
+       </div>
+       <div class="flex items-center">
+        <span class="mr-2" style="color: #ff0080;">{</span> name: "Content Creation", description: "Conexión &gt; atención" <span style="color: #ff0080;">},</span>
+       </div>
+       <div class="flex items-center">
+        <span class="mr-2" style="color: #00ffff;">{</span> name: "Digital Communities", description: "Fandoms reales" <span style="color: #00ffff;">},</span>
+       </div>
+       <div class="flex items-center">
+        <span class="mr-2" style="color: #ffff00;">{</span> name: "Editorial &amp; Trends", description: "Inspiración que informa" <span style="color: #ffff00;">}</span>
+       </div>
+      </div>
+     </div>
+     <div class="text-lg md:text-xl font-bold" style="color: #ffff00;">
+      ];
+     </div>
+    </div><!-- Manifesto Constants -->
+    <div class="p-4 arcade-border" style="border-color: #ff0080;">
+     <div class="text-lg md:text-xl font-bold mb-3" style="color: #ff0080;"><span style="color: #ffff00;">const</span> MANIFESTO_DELULU = {
+     </div>
+     <div class="space-y-2 text-sm md:text-base ml-4" style="color: #ff0080;">
+      <p><span style="color: #00ffff;">// Core beliefs as const assertions</span></p>
+      <div class="space-y-1">
+       <p><span style="color: #00ffff;">imagination:</span> "sin miedo === primer paso para cambiar mundo",</p>
+       <p><span style="color: #ff0080;">technology:</span> "puede ser inclusiva &amp;&amp; bella &amp;&amp; humana",</p>
+       <p><span style="color: #00ff00;">design:</span> "!solo.comunica() but cura + inspira + conecta",</p>
+       <p><span style="color: #ffff00;">future:</span> "!destino but diseño colaborativo" <span style="color: #ffff00;">as const</span></p>
+      </div>
+      <div class="bg-gray-900 p-3 arcade-border text-center mt-3" style="border-color: #ff0080;">
+       <p class="font-bold text-xs md:text-sm" style="color: #ff0080;">} satisfies { delulu: true; solu: true; }</p>
+       <p class="text-xs md:text-sm" style="color: #00ffff;">// We dream in pixels. We build with purpose. We slay with love.</p>
+      </div>
+     </div>
+    </div><!-- Export Class -->
+    <div class="p-4 arcade-border" style="border-color: #00ffff;">
+     <div class="text-lg md:text-xl font-bold mb-3" style="color: #00ffff;"><span style="color: #ffff00;">export default class</span> DelulufutureDev {
+     </div>
+     <div class="text-sm md:text-base ml-4" style="color: #00ffff;">
+      <p><span style="color: #ff0080;">// Static location data</span></p>
+      <p>static readonly HQ = {</p>
+      <p class="ml-4">address: "Diagonal Patriotismo 6, Hipódromo Condesa",</p>
+      <p class="ml-4">city: "Cuauhtémoc, 06170 Ciudad de México, CDMX",</p>
+      <p class="ml-4">coordinates: { lat: 19.4126, lng: -99.1732 }</p>
+      <p>} as const;</p>
+      <div class="mt-3 flex flex-col sm:flex-row flex-wrap gap-2"><button class="arcade-button px-4 py-2 arcade-border transition-all text-sm md:text-base" style="border-color: #ff0080; color: #ff0080;"> contact(): void </button> <button class="arcade-button px-4 py-2 arcade-border transition-all text-sm md:text-base" style="border-color: #00ff00; color: #00ff00;"> showPortfolio(): Promise&lt;Work[]&gt; </button> <button class="arcade-button px-4 py-2 arcade-border transition-all text-sm md:text-base" style="border-color: #ffff00; color: #ffff00;"> collaborate&lt;T&gt;(): T </button>
+      </div>
+     </div>
+     <div class="text-lg md:text-xl font-bold" style="color: #00ffff;">
+      }
+     </div>
+    </div>
+   </div><!-- TypeScript Compilation Complete -->
+   <div class="mt-8 text-center border-t-4 arcade-border pt-6" style="border-color: #ff0080;">
+    <div class="text-xs md:text-sm" style="color: #ff0080;">
+     <div class="text-base mb-2">
+      // Compilation successful!
+     </div>
+     <div>
+      DelulufutureDev © 2024 - Powered by &lt;dreams | code | glitter&gt;
+     </div>
+     <div style="color: #ffff00;">
+      export const VERSION = "2.0.24" as const;
+     </div>
+    </div>
+   </div>
+  </div>
+  <script>
+        // Arcade functionality
+        document.querySelectorAll('.arcade-button').forEach(button => {
+            button.addEventListener('click', function() {
+                // Arcade flash effect
+                this.style.backgroundColor = 'rgba(255, 255, 255, 0.2)';
+                setTimeout(() => {
+                    this.style.backgroundColor = 'transparent';
+                }, 150);
+            });
+        });
+
+        // Arcade startup
+        window.addEventListener('load', function() {
+            console.log('ARCADE MODE INITIALIZED');
+            console.log('READY PLAYER ONE!');
+            console.log('ALL SYSTEMS GO!');
+        });
+    </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9989d4b431ba3834',t:'MTc2MjE1MTUwOS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
